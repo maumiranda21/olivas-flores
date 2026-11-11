@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivas Flores Abogados | Defensa & Estrategia Jurídica Especializada</title>
+    <meta name="description" content="Estudio jurídico peruano especializado en Derecho Penal Económico, Litigación Compleja, Compliance y Cobranza Estratégica.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#060B14',
+                            900: '#0D1B2A',
+                            800: '#101C34',
+                            700: '#1B2A4A',
+                            600: '#263859',
+                        },
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A46A',
+                            600: '#B08D4C',
+                            700: '#947437',
+                        },
+                        warmwhite: '#F8F8F5',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .dot-pattern {
+            background-image: radial-gradient(rgba(197, 164, 106, 0.12) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #E5C384 0%, #C5A46A 50%, #947437 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-card-gradient {
+            background: linear-gradient(160deg, #101C34 0%, #080D1A 100%);
+        }
+        .glass-header {
+            background: rgba(13, 27, 42, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-300 font-sans antialiased selection:bg-gold-500 selection:text-navy-950">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-gold-500/10 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 border border-gold-500/40 bg-navy-900 flex items-center justify-center rounded-lg group-hover:border-gold-500 transition-colors">
+                    <svg viewBox="0 0 100 100" class="w-7 h-7 fill-warmwhite">
+                        <path d="M 50 10 C 27.9 10 10 27.9 10 50 C 10 72.1 27.9 90 50 90 C 72.1 90 90 72.1 90 50 C 90 27.9 72.1 10 50 10 Z M 50 18 C 67.7 18 82 32.3 82 50 C 82 67.7 67.7 82 50 82 C 32.3 82 18 67.7 18 50 C 18 32.3 32.3 18 50 18 Z" fill="#C5A46A"/>
+                        <text x="50" y="66" font-family="'Cormorant Garamond', serif" font-size="52" font-weight="bold" text-anchor="middle" fill="#FFFFFF">F</text>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block font-serif text-lg tracking-wider text-warmwhite font-bold leading-none">OLIVAS FLORES</span>
+                    <span class="block text-[10px] tracking-[0.25em] text-gold-500 uppercase font-semibold mt-1">Abogados</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-xs font-medium uppercase tracking-widest text-slate-300">
+                <a href="#inicio" class="hover:text-gold-500 transition-colors">Inicio</a>
+                <a href="#estudio" class="hover:text-gold-500 transition-colors">El Estudio</a>
+                <a href="#areas" class="hover:text-gold-500 transition-colors">Áreas de Práctica</a>
+                <a href="#enfoque" class="hover:text-gold-500 transition-colors">Enfoque</a>
+                <a href="#equipo" class="hover:text-gold-500 transition-colors">Equipo</a>
+                <a href="#perspectiva" class="hover:text-gold-500 transition-colors">Perspectiva</a>
+                <a href="#contacto" class="hover:text-gold-500 transition-colors">Contacto</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center">
+                <a href="#contacto" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-semibold text-xs tracking-wider uppercase hover:shadow-lg hover:shadow-gold-500/20 transition-all transform hover:-translate-y-0.5 backdrop-blur-md">
+                    Solicitar Consulta
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-gold-500 p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-b border-gold-500/20 px-4 pt-3 pb-6 space-y-3 text-sm font-medium uppercase tracking-wider">
+            <a href="#inicio" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">Inicio</a>
+            <a href="#estudio" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">El Estudio</a>
+            <a href="#areas" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">Áreas de Práctica</a>
+            <a href="#enfoque" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">Enfoque</a>
+            <a href="#equipo" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">Equipo</a>
+            <a href="#perspectiva" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">Perspectiva</a>
+            <a href="#contacto" class="mobile-link block py-2 text-slate-300 hover:text-gold-500">Contacto</a>
+            <a href="#contacto" class="mobile-link block w-full text-center py-3 rounded-xl bg-gold-500 text-navy-950 font-bold text-xs">SOLICITAR CONSULTA</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative pt-44 pb-24 lg:pt-56 lg:pb-36 bg-navy-900 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center mix-blend-luminosity" style="image-rendering: auto;">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Arquitectura Corporativa" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-navy-950/80 via-navy-900/95 to-navy-950"></div>
+        <div class="absolute inset-0 z-0 dot-pattern opacity-40"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <div class="flex items-center justify-center gap-2 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                    <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">Firma Jurídica Especializada</span>
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-warmwhite tracking-tight leading-[1.1] mb-8">
+                    Defensa jurídica con <span class="text-gold-gradient font-italic">criterio estratégico</span>
+                </h1>
+                
+                <p class="text-base sm:text-xl text-slate-300 leading-relaxed font-light mb-10 max-w-3xl mx-auto">
+                    Olivas Flores Abogados reúne alta especialización jurídica y análisis rigoroso para abordar contingencias complejas, litigios de alto impacto y la protección patrimonial de empresas y directivos.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20solicitar%20información%20sobre%20sus%20servicios%20jurídicos" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold text-xs tracking-widest uppercase hover:shadow-xl hover:shadow-gold-500/20 transition-all transform hover:-translate-y-0.5 backdrop-blur-md flex items-center justify-center gap-2">
+                        <i data-lucide="message-square" class="w-4 h-4"></i> Consulta por WhatsApp
+                    </a>
+                    <a href="#areas" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-gold-500/40 bg-navy-800/40 text-warmwhite hover:text-gold-400 font-bold text-xs tracking-widest uppercase hover:border-gold-500 transition-all backdrop-blur-md flex items-center justify-center">
+                        Áreas de Práctica
+                    </a>
+                </div>
+
+                <div class="pt-8 border-t border-slate-800">
+                    <div class="flex flex-wrap items-center justify-center gap-y-3 gap-x-6 sm:gap-x-12 text-xs sm:text-sm font-medium text-slate-300">
+                        <span>Derecho Penal Económico</span>
+                        <span class="hidden sm:inline text-gold-500/40">|</span>
+                        <span>Litigación Compleja</span>
+                        <span class="hidden sm:inline text-gold-500/40">|</span>
+                        <span>Compliance & Prevención</span>
+                        <span class="hidden sm:inline text-gold-500/40">|</span>
+                        <span>Cobranza Estratégica</span>
+                        <span class="hidden sm:inline text-gold-500/40">|</span>
+                        <span>Gestión Integral de Riesgos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estudio" class="py-24 bg-navy-950 relative border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-widest">
+                        El Estudio
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-extrabold text-warmwhite leading-tight">
+                        Especialización jurídica. <br><span class="text-gold-gradient">Criterio en cada decisión.</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg font-light">
+                        En Olivas Flores Abogados entendemos que el derecho corporativo y penal moderno exige una visión analítica que trascienda la asesoría tradicional. Nos enfocamos en la gestión técnica de controversias complejas donde el patrimonio, la reputación y la continuidad operativa están en juego.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        Nuestra práctica combina una sólida solvencia dogmática con una estrategia orientada a resultados concretos, garantizando atención directa por parte de socios experimentados en cada fase del procedimiento.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-6">
+                        <div class="p-5 rounded-2xl bg-navy-900 border border-gold-500/10 flex items-start gap-4">
+                            <div class="p-3 rounded-xl bg-gold-500/10 text-gold-400 border border-gold-500/20">
+                                <i data-lucide="shield-check" class="w-7 h-7"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-lg font-bold text-warmwhite">Rigor Técnico</h4>
+                                <p class="text-xs text-slate-400 mt-1">Análisis exhaustivo de riesgos penales y regulatorios.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-navy-900 border border-gold-500/10 flex items-start gap-4">
+                            <div class="p-3 rounded-xl bg-gold-500/10 text-gold-400 border border-gold-500/20">
+                                <i data-lucide="scale" class="w-7 h-7"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-lg font-bold text-warmwhite">Ética Profesional</h4>
+                                <p class="text-xs text-slate-400 mt-1">Defensa firme bajo estándares éticos intachables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-gold-500/20 to-gold-700/10 rounded-2xl blur-lg"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-gold-500/20 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop" alt="Equipo de Abogados Olivas Flores" class="w-full h-[450px] object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-navy-900/90 backdrop-blur-md border border-gold-500/20">
+                                <p class="font-serif text-lg text-warmwhite font-bold">Atención personalizada y directa</p>
+                                <p class="text-xs text-slate-300 mt-1">Socio a cargo en cada caso corporativo e institucional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="areas" class="py-24 bg-navy-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 text-xs font-semibold uppercase tracking-widest">Servicios Jurídicos</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-warmwhite mt-3 mb-4">Áreas de Práctica</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Soluciones legales diseñadas para situaciones corporativas y patrimoniales que exigen alta especialización.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="rounded-2xl p-8 bg-card-gradient border border-gold-500/15 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-navy-950 flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="gavel" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4 group-hover:text-gold-400 transition-colors">Derecho Penal Económico y Empresarial</h3>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6 font-light">
+                        Asesoría jurídica y defensa técnica en controversias y procedimientos vinculados a delitos tributarios, financieros, lavados de activos, fraude corporativo y responsabilidad penal de personas jurídicas.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-800 pt-4">
+                        <span class="block text-xs uppercase tracking-wider text-gold-500 font-semibold mb-2">Casos habituales:</span>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Investigaciones por delitos tributarios o contables.</div>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Defensa de ejecutivos en imputaciones corporativas.</div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl p-8 bg-card-gradient border border-gold-500/15 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-navy-950 flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="shield-alert" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4 group-hover:text-gold-400 transition-colors">Litigación Estratégica Compleja</h3>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6 font-light">
+                        Representación procesal rigurosa en litigios judiciales y arbitrajes comerciales de alta significación económica o reputacional, diseñando estrategias procesales ofensivas y defensivas.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-800 pt-4">
+                        <span class="block text-xs uppercase tracking-wider text-gold-500 font-semibold mb-2">Casos habituales:</span>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Disputas entre socios o accionistas corporativos.</div>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Procesos contenciosos administrativos y arbitrales.</div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl p-8 bg-card-gradient border border-gold-500/15 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-navy-950 flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="file-check-2" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4 group-hover:text-gold-400 transition-colors">Compliance & Prevención de Riesgos</h3>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6 font-light">
+                        Diseño e implementación de modelos de prevención de delitos (Ley 30424), programas de cumplimiento normativo, auditorías jurídicas y canales de denuncia ética interna.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-800 pt-4">
+                        <span class="block text-xs uppercase tracking-wider text-gold-500 font-semibold mb-2">Casos habituales:</span>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Diagnóstico de riesgos legales corporativos.</div>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Oficialía de cumplimiento externa y capacitaciones.</div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl p-8 bg-card-gradient border border-gold-500/15 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-navy-950 flex items-center justify-center mb-6 shadow-md">
+                        <i data-lucide="coins" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4 group-hover:text-gold-400 transition-colors">Cobranza Estratégica & Recupero</h3>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6 font-light">
+                        Recuperación legal eficiente de acreencias y cartera morosa comercial mediante herramientas prejudiciales coercitivas, ejecuciones de garantías y medidas cautelares efectivas.
+                    </p>
+                    <div class="space-y-2 border-t border-slate-800 pt-4">
+                        <span class="block text-xs uppercase tracking-wider text-gold-500 font-semibold mb-2">Casos habituales:</span>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Ejecución rápida de títulos valores e hipotecas.</div>
+                        <div class="flex items-center gap-2 text-xs text-slate-400"><i data-lucide="check" class="w-4 h-4 text-gold-500"></i> Recuperación de acreencias comerciales de alto valor.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="enfoque" class="py-24 bg-navy-950 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 text-xs font-semibold uppercase tracking-widest">Metodología de Trabajo</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-warmwhite mt-3 mb-4">Cada situación requiere una evaluación jurídica propia</h2>
+                <p class="text-slate-400 text-base">Un proceso secuencial orientado a minimizar contingencias y maximizar la efectividad estratégica.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                
+                <div class="bg-navy-900 border border-gold-500/20 rounded-2xl p-6 relative">
+                    <span class="font-serif text-5xl font-extrabold text-gold-500/30 block mb-3">01</span>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-2">Diagnóstico</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Comprensión exhaustiva de los hechos, análisis de documentación sensible e identificación inmediata de riesgos legalmente críticos.</p>
+                </div>
+
+                <div class="bg-navy-900 border border-gold-500/20 rounded-2xl p-6 relative">
+                    <span class="font-serif text-5xl font-extrabold text-gold-500/30 block mb-3">02</span>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-2">Evaluación</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Estudio dogmático y jurisprudencial detallado para establecer el margen de viabilidad procesal o preventiva.</p>
+                </div>
+
+                <div class="bg-navy-900 border border-gold-500/20 rounded-2xl p-6 relative">
+                    <span class="font-serif text-5xl font-extrabold text-gold-500/30 block mb-3">03</span>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-2">Estrategia</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Formulación del plan de acción legal u ofensivo, definiendo etapas, contingencias y objetivos procesales medibles.</p>
+                </div>
+
+                <div class="bg-navy-900 border border-gold-500/20 rounded-2xl p-6 relative">
+                    <span class="font-serif text-5xl font-extrabold text-gold-500/30 block mb-3">04</span>
+                    <h3 class="font-serif text-2xl font-bold text-warmwhite mb-2">Actuación</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">Patrocinio activo y firme ante fiscalías, juzgados, tribunales arbitrales o contrapartes comerciales.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="py-24 bg-navy-900 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 text-xs font-semibold uppercase tracking-widest">Profesionales</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-warmwhite mt-3 mb-4">Las personas detrás de la práctica jurídica</h2>
+                <p class="text-slate-400 text-base">Un equipo de abogados enfocado en la excelencia académica y la práctica efectiva.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-navy-950 border border-gold-500/15 rounded-2xl overflow-hidden group hover:border-gold-500/40 transition-all">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Socio Principal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-warmwhite">Dr. Carlos Olivas</h3>
+                        <p class="text-gold-400 text-xs font-semibold uppercase tracking-wider mt-1">Socio Fundador — Penal Económico</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Especialista en derecho penal de la empresa con amplia trayectoria en patrocinio de procesos complejos ante la Corte Nacional.</p>
+                    </div>
+                </div>
+
+                <div class="bg-navy-950 border border-gold-500/15 rounded-2xl overflow-hidden group hover:border-gold-500/40 transition-all">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Socia Compliance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-warmwhite">Dra. María Flores</h3>
+                        <p class="text-gold-400 text-xs font-semibold uppercase tracking-wider mt-1">Socia — Compliance & Cobranzas</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Experta en estructuración de modelos de prevención corporativa y estrategias de recupero judicial de alta exigencia.</p>
+                    </div>
+                </div>
+
+                <div class="bg-navy-950 border border-gold-500/15 rounded-2xl overflow-hidden group hover:border-gold-500/40 transition-all">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Asociado Senior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-warmwhite">Dr. Alejandro Mendoza</h3>
+                        <p class="text-gold-400 text-xs font-semibold uppercase tracking-wider mt-1">Asociado Senior — Litigios</p>
+                        <p class="text-slate-300 text-xs mt-3 leading-relaxed">Especializado en litigios contencioso-administrativos y defensa procesal en arbitrajes comerciales.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="perspectiva" class="py-24 bg-navy-950 border-t border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-500 text-xs font-semibold uppercase tracking-widest">Publicaciones & Análisis</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-warmwhite mt-3 mb-4">Perspectiva Jurídica</h2>
+                <p class="text-slate-400 text-base">Criterios técnicos sobre jurisprudencia reciente y gestión de riesgos penales corporativos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <article class="bg-navy-900 border border-gold-500/15 rounded-2xl overflow-hidden flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between text-xs text-gold-400 mb-4">
+                            <span class="uppercase tracking-widest font-semibold">Derecho Penal Económico</span>
+                            <span>15 de Octubre, 2026</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4">Riesgos Penales en la Administración de Personas Jurídicas bajo la Ley 30424</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            El incremento de imputaciones a administradores de hecho y de derecho exige un replanteamiento en los canales de reporte directivo y el blindaje preventivo...
+                        </p>
+                        <div class="text-xs text-slate-400 italic">Por: Dr. Carlos Olivas</div>
+                    </div>
+                    <div class="p-6 bg-navy-950/60 border-t border-gold-500/10 flex justify-end">
+                        <button onclick="openArticleModal('art-1')" class="text-gold-400 hover:text-warmwhite text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                            Leer Artículo Completo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-navy-900 border border-gold-500/15 rounded-2xl overflow-hidden flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between text-xs text-gold-400 mb-4">
+                            <span class="uppercase tracking-widest font-semibold">Compliance Corporativo</span>
+                            <span>28 de Septiembre, 2026</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4">Criterios Judiciales Recientes sobre la Efectividad de los Modelos de Prevención</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Un análisis detallado sobre cómo la judicatura penal peruana valora el cumplimiento normativo real frente a simples códigos de ética formales...
+                        </p>
+                        <div class="text-xs text-slate-400 italic">Por: Dra. María Flores</div>
+                    </div>
+                    <div class="p-6 bg-navy-950/60 border-t border-gold-500/10 flex justify-end">
+                        <button onclick="openArticleModal('art-2')" class="text-gold-400 hover:text-warmwhite text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                            Leer Artículo Completo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-navy-900 border-t border-gold-500/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-warmwhite text-center mb-12">Preguntas Frecuentes</h2>
+            <div class="space-y-4">
+                <div class="bg-navy-950 rounded-xl border border-gold-500/15 overflow-hidden">
+                    <button class="w-full text-left p-6 font-serif text-xl font-bold text-warmwhite flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span>¿En qué situaciones es aconsejable contactar al estudio?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gold-500 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-slate-300 text-sm leading-relaxed hidden">
+                        Se recomienda contactarnos ante citaciones policiales o fiscales, notificaciones de procedimientos sancionadores, contingencias contenciosas entre socios o antes de tomar decisiones corporativas que involucren riesgos regulatorios altos.
+                    </div>
+                </div>
+                <div class="bg-navy-950 rounded-xl border border-gold-500/15 overflow-hidden">
+                    <button class="w-full text-left p-6 font-serif text-xl font-bold text-warmwhite flex items-center justify-between" onclick="toggleFaq(this)">
+                        <span>¿Cómo se desarrolla la primera consulta?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gold-500 transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-slate-300 text-sm leading-relaxed hidden">
+                        Realizamos una sesión inicial para evaluar antecedentes, revisar la documentación preliminar disponible y definir el grado de riesgo o la viabilidad de la defensa jurídica requerida.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-navy-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-gold-500 text-xs font-semibold uppercase tracking-widest">Contacto Directo</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-warmwhite">Conversemos sobre su situación legal</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Complete el formulario para coordinar una evaluación jurídica reservada de su caso con un abogado especialista de nuestra firma.
+                    </p>
+
+                    <div class="space-y-4 pt-6">
+                        <div class="flex items-center gap-4 text-slate-300 text-sm">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 border border-gold-500/20 flex items-center justify-center text-gold-400">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <span>Lima, Perú (Atención previa cita)</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-slate-300 text-sm">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 border border-gold-500/20 flex items-center justify-center text-gold-400">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <span>contacto@olivasfloresabogados.pe</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-slate-300 text-sm">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 border border-gold-500/20 flex items-center justify-center text-gold-400">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <span>+51 (1) 999 999 999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form id="contact-form" class="bg-navy-900 border border-gold-500/20 rounded-2xl p-8 space-y-6 shadow-2xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Nombre Completo *</label>
+                                <input type="text" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-3 text-warmwhite text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Empresa / Organización</label>
+                                <input type="text" class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-3 text-warmwhite text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Correo Electrónico *</label>
+                                <input type="email" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-3 text-warmwhite text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Teléfono *</label>
+                                <input type="tel" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-3 text-warmwhite text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Área de Interés</label>
+                            <select class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-3 text-warmwhite text-sm focus:outline-none focus:border-gold-500">
+                                <option value="penal">Derecho Penal Económico</option>
+                                <option value="litigios">Litigación Estratégica</option>
+                                <option value="compliance">Compliance Corporativo</option>
+                                <option value="cobranza">Cobranza Estratégica</option>
+                                <option value="otro">Otro tipo de consulta</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Breve descripción de su consulta *</label>
+                            <textarea rows="4" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-3 text-warmwhite text-sm focus:outline-none focus:border-gold-500" placeholder="Describa brevemente la situación legal sin incluir claves ni datos confidenciales sensibles..."></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" required id="privacy" class="mt-1 rounded bg-navy-950 border-gold-500/20 text-gold-500">
+                            <label for="privacy" class="text-xs text-slate-400">He leído y acepto la política de privacidad y tratamiento de datos personales.</label>
+                        </div>
+
+                        <p class="text-[11px] text-slate-500 italic">El envío de este formulario no constituye patrocinio ni establece por sí solo una relación abogado-cliente.</p>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold text-xs uppercase tracking-widest hover:shadow-xl transition-all">
+                            Enviar Consulta Reservada
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 border-t border-gold-500/10 py-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="font-serif text-warmwhite font-bold text-sm">OLIVAS FLORES ABOGADOS</p>
+                <p class="mt-1">© 2026 Olivas Flores Abogados. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <button onclick="openModal('modal-libro')" class="hover:text-gold-400">Libro de Reclamaciones</button>
+                <button onclick="openModal('modal-privacidad')" class="hover:text-gold-400">Política de Privacidad</button>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20solicitar%20información%20sobre%20sus%20servicios%20jurídicos" target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <div id="modal-art-1" class="fixed inset-0 z-50 bg-navy-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-navy-900 border border-gold-500/30 rounded-2xl max-w-2xl w-full p-8 relative max-h-[85vh] overflow-y-auto">
+            <button onclick="closeModal('modal-art-1')" class="absolute top-4 right-4 text-slate-400 hover:text-warmwhite"><i data-lucide="x"></i></button>
+            <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4">Riesgos Penales en la Administración de Personas Jurídicas bajo la Ley 30424</h3>
+            <p class="text-xs text-gold-400 mb-4">Por: Dr. Carlos Olivas — 15 de Octubre, 2026</p>
+            <div class="text-sm text-slate-300 space-y-4 leading-relaxed">
+                <p>La Ley 30424 y sus sucesivas modificaciones han cambiado radicalmente el mapa de responsabilidad para los órganos directivos en el Perú. La imputación a personas jurídicas ya no es una mera eventualidad procesal, sino un eje central en las investigaciones seguidas por la Fiscalía de la Nación.</p>
+                <p>Es imperativo que los directorios implementen controles preventivos reales capaces de eximir o atenuar la responsabilidad penal corporativa en caso de contingencias.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-art-2" class="fixed inset-0 z-50 bg-navy-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-navy-900 border border-gold-500/30 rounded-2xl max-w-2xl w-full p-8 relative max-h-[85vh] overflow-y-auto">
+            <button onclick="closeModal('modal-art-2')" class="absolute top-4 right-4 text-slate-400 hover:text-warmwhite"><i data-lucide="x"></i></button>
+            <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4">Criterios Judiciales Recientes sobre la Efectividad de los Modelos de Prevención</h3>
+            <p class="text-xs text-gold-400 mb-4">Por: Dra. María Flores — 28 de Septiembre, 2026</p>
+            <div class="text-sm text-slate-300 space-y-4 leading-relaxed">
+                <p>Los tribunales vienen exigiendo que los programas de Compliance demuestren eficacia operativa real y no solo existencia documental («Compliance de papel»).</p>
+                <p>Analizamos las líneas jurisprudenciales sobre supervisión del Encargado de Prevención y la relevancia de los canales de denuncia normados.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-libro" class="fixed inset-0 z-50 bg-navy-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-navy-900 border border-gold-500/30 rounded-2xl max-w-xl w-full p-8 relative">
+            <button onclick="closeModal('modal-libro')" class="absolute top-4 right-4 text-slate-400 hover:text-warmwhite"><i data-lucide="x"></i></button>
+            <h3 class="font-serif text-2xl font-bold text-warmwhite mb-2">Libro de Reclamaciones Virtual</h3>
+            <p class="text-xs text-slate-400 mb-6">Conforme a lo establecido en el Código de Protección y Defensa del Consumidor del Perú.</p>
+            <form onsubmit="alert('Reclamación registrada correctamente.'); closeModal('modal-libro'); return false;" class="space-y-4">
+                <input type="text" placeholder="Nombre completo" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-2 text-sm text-warmwhite">
+                <input type="email" placeholder="Correo electrónico" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-2 text-sm text-warmwhite">
+                <textarea placeholder="Detalle del reclamo o queja" rows="3" required class="w-full bg-navy-950 border border-gold-500/20 rounded-xl px-4 py-2 text-sm text-warmwhite"></textarea>
+                <button type="submit" class="w-full py-3 bg-gold-500 text-navy-950 font-bold text-xs uppercase rounded-xl">Enviar Hoja de Reclamación</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-privacidad" class="fixed inset-0 z-50 bg-navy-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-navy-900 border border-gold-500/30 rounded-2xl max-w-xl w-full p-8 relative">
+            <button onclick="closeModal('modal-privacidad')" class="absolute top-4 right-4 text-slate-400 hover:text-warmwhite"><i data-lucide="x"></i></button>
+            <h3 class="font-serif text-2xl font-bold text-warmwhite mb-4">Política de Privacidad</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">Toda la información proporcionada a Olivas Flores Abogados a través de este sitio web es tratada bajo el más estricto secreto profesional de acuerdo con las leyes aplicables en la República del Perú.</p>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        function openArticleModal(id) {
+            if(id === 'art-1') openModal('modal-art-1');
+            if(id === 'art-2') openModal('modal-art-2');
+        }
+
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.getElementById(id).classList.add('flex');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.getElementById(id).classList.remove('flex');
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Gracias por su consulta. Nos pondremos en contacto a la brevedad posible.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
